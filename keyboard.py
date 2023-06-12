@@ -1,15 +1,15 @@
 from tkinter import *
 import time
 
-def key_up(e):
-    print("Up", e.char)
-    ts = time.time()
-    print(ts)
+def key_up(key_event):
+    print("Up", key_event.char)
+    time_stamp = time.time()
+    print(time_stamp)
 
-def key_down(e):
-    print("down", e.char)
-    ts = time.time()
-    print(ts)
+def key_down(key_event):
+    print("down", key_event.char)
+    time_stamp = time.time()
+    print(time_stamp)
 
 root = Tk()
 frame = Frame(root, width = 100, height = 100)
