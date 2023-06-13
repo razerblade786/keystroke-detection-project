@@ -2,6 +2,17 @@
 import pandas as pd
 from tkinter import *
 import time
+import pyrebase 
+const firebaseConfig = {
+  apiKey: "AIzaSyA3bH46x_LyPJUgsPZAtlh-fDDcZ50cao4",
+  authDomain: "suhaibhumid.firebaseapp.com",
+  databaseURL: "https://suhaibhumid-default-rtdb.firebaseio.com",
+  projectId: "suhaibhumid",
+  storageBucket: "suhaibhumid.appspot.com",
+  messagingSenderId: "924618277712",
+  appId: "1:924618277712:web:ce2ae64ba99745527ca255",
+  measurementId: "G-W9LQQ41SY7"
+};
 
 def key_up(key_event):
     global entered_password, user_data
